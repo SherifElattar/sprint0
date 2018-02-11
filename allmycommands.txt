@@ -1,0 +1,21 @@
+
+mkdir sprint0
+cd sprint0
+git init
+git add *
+--after deleting--
+git checkout -- file3.txt
+git commit -m "First Commit! Committing the three files with the sections from the book"
+git remote add origin https://github.com/SherifElattar/sprint0.git
+git push origin master
+git checkout -b ReadMe
+git add README.md
+git commit -m "Adding README.md file to the ReadMe branch"
+git checkout master
+git merge ReadMe
+git checkout ReadMe
+git push origin ReadMe
+git checout master
+git add allmycommands.txt
+git commit -m "This file contains all the commands used in the individual part of the sprint"
+git push origin master
